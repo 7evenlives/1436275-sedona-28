@@ -5,102 +5,116 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+
     <header>
-      <nav>
-        <a href=" ">
-          <img src="logo.png" width="138" height="70" alt="Логотип сайта">
-      </a>
-        <ul>
-          <li><a href=" ">Информация</a></li>
-          <li><a href=" ">Фото и видео</a></li>
-          <li><a href=" ">Карта Штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+      <nav class="header-navigation">
+        <a>
+          <img src="img/logo.png" width="138" height="70" alt="Логотип сайта">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item left"><a href="blank.html">Информация</a></li>
+          <li class="navigation-item left"><a href="blank.html">Фото и видео</a></li>
+          <li class="navigation-item"><a href="blank.html">Карта Штата</a></li>
+          <li class="navigation-item"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <div>
+      <div class="main-panorama">
         <img src=" " width=" " height=" " alt="Панорамный вид каньона">
-        <!-- как назвать/обозначить центральную swg на фоне?) -->
+        <!-- как назвать/обозначить центральную swg(логотип SEDONA) на фоне?) -->
         <img src=" " width=" " height=" " alt=" "> 
       </div>
-      <h1>
-        Седона - небольшой городок в Аризоне,<br>
-        заслуживающий большего!
-      </h1>
-      <section>
-        <h2>Преимущества</h2>
+
+      <div class="main-reasons">
+        <h1>
+            Седона - небольшой городок в Аризоне,<br>
+            заслуживающий большего!
+        </h1>
+      </div>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        <ul>
-          <li>
+        <ul class="advantages-list">
+          <li class="advantages-item_town light">
             <h3>Настоящий городок</h3>
             <span>- №1 -</span>
             <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="" width="800" height="256" alt="Фотография города">
-          </li>
+          </li class="advantages-item_housing">
+          <!-- Правильно ли я понимаю, что нижние три пункта (Жилье, еда, Сувениры) списка нужно обернуть в div, 
+            тк они визуально на одном горизонте?-->
           <li>
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li>
+          <li class="advantages-item_food">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li>
-            <h3>Сувениры</h3>
+            <h3 class="advantages-item_gifts">Сувениры</h3>
             <p>Не только китайского, но и местоного производства!</p>
           </li>
+          <!--Тут снова div для картинки и Моста дьявола? -->
           <li>
-            <h3>Там есть мост дьявола</h3>
+            <h3 class="advantages-item_gate light">Там есть мост дьявола</h3>
             <span>- №2 -</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             <img src="" width="800" height="256" alt="Фотография Моста Дьявола">
           </li>
-          <li>
+          <!--Div для последних трех преимуществ?-->
+          <li class="advantages-item_area">
             <h3>Небольшая площадь</h3>
             <span>- №3 -</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li>
+          <li class="advantages-item_road">
             <h3>Красивая дорога</h3>
             <span>- №4 -</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li>
+          <li class="advantages-item_notourist">
             <h3>Мало туристов</h3>
             <span>- №5 -</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
       </section>
-      <section>
+
+      <section class="bestdeal">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <!-- Здесь будет форма поиска -->
       </section>
-      <section>
+
+      <section class="map">
         <img src=" " width=" " alt="Расположение Седоны на карте">
       </section>
     </main>
-    <footer>
-      <div>
-        <h3>Контакты</h3>
+
+    <footer class="main-footer">
+
+      <div class="main-contact">
+        <h2>Контакты</h2>
         <span>#Visitsedona</span>
         <p>Тел: +7(495)666-01-66</p>
       </div>
-      <div>
-        <h3>Мы в социальных сетях</h3>
-        <ul>
-          <li><a href=" ">twitter</a></li>
-          <li><a href=" ">facebook</a></li>
-          <li><a href=" ">youtube</a></li>
+
+      <div class="main-social">
+        <h2>Мы в социальных сетях</h2>
+        <ul class="social-list">
+          <li class="social-item_twitter"><a href=" ">twitter</a></li>
+          <li class="social-item_facebook"><a href=" ">facebook</a></li>
+          <li class="social-item_youtube"><a href=" ">youtube</a></li>
         </ul>
       </div>
 
-      <p>Website by
-        <a class="contact-us-link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src=" " alt="Лого htmlacademy"></a>
+      <p class="main-contact-us">Website by
+        <a class="contact-us-link" href="https://htmlacademy.ru/intensive/htmlcss"></a>
       </p>
     </footer>
 
