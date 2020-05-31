@@ -27,19 +27,20 @@
             <form action="https://echo.htmlacademy.ru" method="get"  oninput="costoutput.value=costcount.value">
               <fieldset class="infrastructure">
                 <legend>Инфраструктура:</legend>
-                <li>
-                  <input type="checkbox" name="pool" id="filter-pool" tabindex="1" checked>
-                  <label for="filter-pool">Бассейн</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="parking" id="filter-parking" tabindex="2">
-                  <label for="filter-parking">Парковка</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="wi-fi" id="filter-wi-fi" tabindex="3">
-                  <label for="filter-wi-fi">Wi-Fi</label>
-                </li>
-              </ul>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="pool" id="filter-pool" tabindex="1" checked>
+                    <label for="filter-pool">Бассейн</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="parking" id="filter-parking" tabindex="2">
+                    <label for="filter-parking">Парковка</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="wi-fi" id="filter-wi-fi" tabindex="3">
+                    <label for="filter-wi-fi">Wi-Fi</label>
+                  </li>
+                </ul>
               </fieldset>
 
               <fieldset class="housing">
@@ -64,7 +65,7 @@
               <fieldset class="cost">
                 <legend>Стоимость в сутки (Р):</legend>
                 <div class="half-width">
-                  <label for="dayscount">Стоимость в сутки (Р):</label>
+                  <label for="costcount">Стоимость в сутки (Р):</label>
                   <input type="range" id="costcount" name="costcount" tabindex="7" min="1" max="3400" step="10">
                 </div>
                 <div class="half-width output-area">
@@ -72,6 +73,7 @@
                 </div>
 
               <button class="btn-show" type="submit">Показать</button>
+              </fieldset>
             </form>
             
         </section>
