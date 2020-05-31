@@ -24,6 +24,55 @@
         <section class="filter">
             <h1>Подбор гостиниц</h1>
             <!--Здесь будет форма с фильтром-->
+            <form action="https://echo.htmlacademy.ru" method="get"  oninput="costoutput.value=costcount.value">
+              <fieldset class="infrastructure">
+                <legend>Инфраструктура:</legend>
+                <li>
+                  <input type="checkbox" name="pool" id="filter-pool" tabindex="1" checked>
+                  <label for="filter-pool">Бассейн</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="parking" id="filter-parking" tabindex="2">
+                  <label for="filter-parking">Парковка</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="wi-fi" id="filter-wi-fi" tabindex="3">
+                  <label for="filter-wi-fi">Wi-Fi</label>
+                </li>
+              </ul>
+              </fieldset>
+
+              <fieldset class="housing">
+                <legend>Тип жилья:</legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="inn" id="filter-inn" tabindex="4" checked>
+                    <label for="filter-inn">Гостиница</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="hotel" id="filter-hotel" tabindex="5" checked>
+                    <label for="filter-hotel">Мотель</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="apartmens" id="filter-apartmens" tabindex="6" checked>
+                    <label for="filter-apartmens">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <!-- Пока с этим блоком до конца не разобрался, как корректно все описать..-->
+              <fieldset class="cost">
+                <legend>Стоимость в сутки (Р):</legend>
+                <div class="half-width">
+                  <label for="dayscount">Стоимость в сутки (Р):</label>
+                  <input type="range" id="costcount" name="costcount" tabindex="7" min="1" max="3400" step="10">
+                </div>
+                <div class="half-width output-area">
+                  <output name="costoutput"> </output>
+                </div>
+
+              <button class="btn-show" type="submit">Показать</button>
+            </form>
             
         </section>
         <section class="deals">
