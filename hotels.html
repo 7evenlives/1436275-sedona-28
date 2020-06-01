@@ -23,8 +23,8 @@
     <main>
         <section class="filter">
             <h1>Подбор гостиниц</h1>
-            <!--Здесь будет форма с фильтром-->
-            <form action="https://echo.htmlacademy.ru" method="get" oninput="costoutput.value=costcount.value">
+            <!-- Форма с фильтром -->
+            <form action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="infrastructure">
                 <legend>Инфраструктура:</legend>
                 <ul>
@@ -61,14 +61,10 @@
                 </ul>
               </fieldset>
 
-              <!-- Пока с этим блоком до конца не разобрался, как корректно все описать..-->
               <fieldset class="cost">
                 <legend>Стоимость в сутки (Р):</legend>
                 <div class="half-width">
                   <input type="range" id="costcount" name="costcount" min="1" max="3400" step="10">
-                </div>
-                <div class="half-width output-area">
-                  <output name="costoutput"> </output>
                 </div>
 
               <button class="btn-show" type="submit">Показать</button>
