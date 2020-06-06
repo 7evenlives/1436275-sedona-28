@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Hotels</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -15,29 +18,29 @@
           <li class="navigation-item"><a href="">Информация</a></li>
           <li class="navigation-item"><a href="">Фото и видео</a></li>
           <li class="navigation-item"><a href="">Карта Штата</a></li>
-          <li class="navigation-item"><a>Гостиницы</a></li>
+          <li class="navigation-item enabled"><a>Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-        <section class="filter">
-            <h1>Подбор гостиниц</h1>
+        <section class="filters">
+            <h1 class="visually-hidden">Подбор гостиниц</h1>
             <!-- Форма с фильтром -->
-            <form action="https://echo.htmlacademy.ru" method="get">
+            <form class="filter" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="infrastructure">
                 <legend>Инфраструктура:</legend>
                 <ul>
                   <li>
-                    <input type="checkbox" name="pool" id="filter-pool" checked>
+                    <input class="filter-input-chekbox" type="checkbox" name="pool" id="filter-pool" checked>
                     <label for="filter-pool">Бассейн</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="parking" id="filter-parking">
+                    <input class="filter-input-chekbox" type="checkbox" name="parking" id="filter-parking">
                     <label for="filter-parking">Парковка</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                    <input class="filter-input-chekbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
                     <label for="filter-wi-fi">Wi-Fi</label>
                   </li>
                 </ul>
@@ -47,15 +50,15 @@
                 <legend>Тип жилья:</legend>
                 <ul>
                   <li>
-                    <input type="checkbox" name="inn" id="filter-inn" checked>
+                    <input class="filter-input-chekbox" type="checkbox" name="inn" id="filter-inn" checked>
                     <label for="filter-inn">Гостиница</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                    <input class="filter-input-chekbox" type="checkbox" name="hotel" id="filter-hotel" checked>
                     <label for="filter-hotel">Мотель</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="apartmens" id="filter-apartmens" checked>
+                    <input class="filter-input-chekbox" type="checkbox" name="apartmens" id="filter-apartmens" checked>
                     <label for="filter-apartmens">Апартаменты</label>
                   </li>
                 </ul>
@@ -80,8 +83,8 @@
                     <h3><a href="">Amara resort & Spa</a></h3>
                     <p>Гостиница</p>
                     <span class="price">от 4000р.</span>
-                    <a class="btn about" href="">Подробнее</a>
-                    <a class="btn book" href="">Забронировать</a>
+                    <a class="btn-about" href="">Подробнее</a>
+                    <a class="btn-book" href="">Забронировать</a>
                     <span class="rating">Рейтинг: 8,5</span>
                 </li>
 
@@ -90,8 +93,8 @@
                     <h3><a href="">Desert Quail Inn</a></h3>
                     <p>Мотель</p>
                     <span class="price">от 3000р.</span>
-                    <a class="btn about" href="">Подробнее</a>
-                    <a class="btn book" href="">Забронировать</a>
+                    <a class="btn-about" href="">Подробнее</a>
+                    <a class="btn-book" href="">Забронировать</a>
                     <span class="rating">Рейтинг: 8,5</span>                    
                 </li>
 
@@ -100,8 +103,8 @@
                     <h3><a href="">Villas At Poco Diablo</a></h3>
                     <p>Апартаменты</p>
                     <span class="price">от 2000р.</span>
-                    <a class="btn about" href="">Подробнее</a>
-                    <a class="btn book" href="">Забронировать</a>
+                    <a class="btn-about" href="">Подробнее</a>
+                    <a class="btn-book" href="">Забронировать</a>
                     <span class="rating">Рейтинг: 8,5</span>                    
                 </li>
             </ul>
@@ -111,23 +114,23 @@
 
     <footer class="main-footer">
 
-      <div class="main-contact">
-        <h2>Контакты</h2>
+      <div class="footer-contact">
+        <h2 class="visually-hidden">Контакты</h2>
         <span>#Visitsedona</span>
         <a href="tel:+74956660166">Тел: +7(495)666-01-66</a>
       </div>
 
-      <div class="main-social">
-        <h2>Мы в социальных сетях</h2>
+      <div class="footer-social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social-list">
-          <li class="social-item_twitter"><a href=""><img src="img/icon-twitter.svg" width="46" height="48" alt="Twitter"></a></li>
-          <li class="social-item_facebook"><a href=""><img src="img/icon-facebook.svg" width="46" height="48" alt="Facebook"></a></li>
-          <li class="social-item_youtube"><a href=""><img src="img/icon-youtube.svg" width="46" height="48" alt="Youtube"></a></li>
+          <li class="social-item"><a href=""><img src="img/icon-twitter.svg" width="46" height="48" alt="Twitter"></a></li>
+          <li class="social-item"><a href=""><img src="img/icon-facebook.svg" width="46" height="48" alt="Facebook"></a></li>
+          <li class="social-item"><a href=""><img src="img/icon-youtube.svg" width="46" height="48" alt="Youtube"></a></li>
         </ul>
       </div>
 
-      <p class="main-contact-us">Website by
-        <a class="contact-us-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTMLAcademy"></a>
+      <p class="footer-contact-us">Website by
+        <a class="footer-us-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTMLAcademy"></a>
       </p>
     </footer>
 

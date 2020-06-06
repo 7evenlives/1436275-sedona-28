@@ -1,7 +1,33 @@
 /* Variables */
 
 :root {
+  --basic-blue: #81B3D2;
+  --basic-dark-blue: #669EC0;
+  --basic-extra-blue: #5496BD;
 
+  --basic-brown: #766357;
+  --basic-dark-brown: #604E43;
+  --basic-extra-brown: #503E33;
+
+  --basic-white: #ffffff;
+  --basic-dirty-white: #EEEEEE;
+
+  --basic-black: #000000;
+  --basic-lightblack: #333333;
+  --basic-extra-gray: #666666;
+
+  --special-white: #F2F2F2;
+  --special-lightgray: #EBEBEB;
+
+  --basic-extra-black: #231F20;
+  --basic-gray: #BDBBBC;
+
+  --special-transparent-black: rgba(0, 0, 0, .30);
+  --special-transparent-white: rgba(255, 255, 255, .30);
+
+  --border-gray: #e5e5e5;
+
+  --special-activebrown: #766357;
   }
 
 
@@ -9,8 +35,353 @@
 
 body {
     min-width: 1200px;
-
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: regular;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
 }
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-black);
+  }
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-list:nth-child(-n+2) {
+  text-align: left;
+}
+
+.navigation-list::nth-child(n+2) {
+  text-align: right;
+}
+
+/* User navigation */
+
+.navigation-list a {
+  color: var(--basic-black);
+}
+
+.navigation-list a:hover {
+  color: var(--basic-blue);
+}
+
+.navigation-list a:focus {
+  color: var(--special-transparent-black);
+}
+
+.enabled a {
+  color: var(--special-activebrown);
+}
+
+.enabled a:focus,
+.enabled a:hover {
+  color: var(--special-activebrown);
+}
+
+/* Reasons */
+
+.main-reasons-slogan {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 26px;
+  }
+
+.main-reasons p {
+  text-align: center;
+  line-height: 26px;
+}
+
+/* Advantages */
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-item {
+  text-align: center;
+}
+
+.advantages-item h3 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+.item-wrap {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.item-wrap h3 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+.bestdeal h2 {
+  text-align: center;
+}
+
+.bestdeal p {
+  text-align: center;
+}
+
+/* Buttons */
+
+.btn-findhotel {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-brown);
+  border: none;
+}
+
+.btn-findhotel:focus,
+.btn-findhotel:hover {
+  background-color: var(--basic-dark-brown);
+}
+
+.btn-findhotel:active {
+  background-color: var(--basic-extra-brown);
+  color: var(--special-transparent-white);
+}
+
+
+.btn-find {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+}
+
+.btn-find:focus,
+.btn-find:hover {
+  background-color: var(--basic-dark-blue);
+}
+
+.btn-find:active {
+  background-color: var(--basic-extra-blue);
+  color: var(--special-transparent-white);
+}
+
+.btn-show {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+}
+
+.btn-show:focus,
+.btn-show:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.btn-about {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+}
+
+.btn-about:focus,
+.btn-about:hover {
+  background-color: var(--basic-dark-blue);
+}
+
+.btn-about:active {
+  background-color: var(--basic-extra-blue);
+  color: var(--special-transparent-white);
+}
+
+.btn-book {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+}
+
+.btn-book:focus,
+.btn-book:hover {
+  background-color: var(--basic-dark-brown);
+}
+
+.btn-book:active {
+  background-color: var(--basic-extra-brown);
+  color: var(--special-transparent-white);
+}
+
+
+
+/* Booking-form */
+
+.booking-item {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.booking-item input {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--special-white);
+  border: none;
+}
+
+.booking-item input:hover, 
+.booking-item input:focus {
+  background-color: var(--special-lightgray);
+}
+
+.booking-item input:active {
+  background-color: var(--basic-white);
+  border: 2px solid var(--special-lightgray);
+}
+
+fieldset {
+  border: none;
+}
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.footer-contact a {
+  color: var(--basix-black);
+  text-decoration: none;
+}
+
+.footer-contact span {
+  text-align: left;
+  color: var(--basic-black);
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+ }
+
+.footer-contact a {
+  color: var(--basic-black);
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+ }
+
+.footer-contact-us {
+  color: var(--basic-black);
+  font-size: px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+ }
+
+/* Filters */
+
+.filters {
+  background-color: var(--basic-blue);
+}
+
+.filter legend {
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--basic-white);
+  font-weight: bold;
+}
+
+.filter ul {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+
+/* Deals */
+
+.deals-item {
+  border-top: 1px solid var(--border-gray);
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.deals-item a {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.deals-item p {
+  color: var(--basic-lightblack);
+}
+
+.deals-item span {
+  color: var(--basic-lightblack);
+}
+
+.rating {
+  color: var(--basic-extra-gray);
+  text-align: center;
+  background-color: var(--special-white);
+}
+
+
+
+
+
+
+
+
 
 .visually-hidden {
     position: absolute;
