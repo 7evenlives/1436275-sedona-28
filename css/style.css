@@ -260,7 +260,7 @@ a:not([href]):hover {
 .btn-about:focus,
 .btn-about:hover {
   background-color: var(--basic-dark-blue);
-  color: var(--basic-white);
+
 }
 
 .btn-about:active {
@@ -281,9 +281,7 @@ a:not([href]):hover {
 
 .btn-book:focus,
 .btn-book:hover {
-  background-color: var(--basic-dark-brown);
-  color: var(--basic-white);
-  
+  background-color: var(--basic-dark-brown); 
 }
 
 .btn-book:active {
@@ -389,7 +387,7 @@ a:not([href]):hover {
   border-bottom: 1px solid var(--border-gray);
 }
 
-.deals-item a {
+.deals-item h3 {
   color: var(--basic-black);
   font-size: 21px;
   line-height: 26px;
