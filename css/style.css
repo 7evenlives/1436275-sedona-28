@@ -236,6 +236,7 @@ img {
   color: var(--basic-white);
   text-transform: uppercase;
   background-color: transparent;
+  font-family: "PT Sans", Arial, sans-serif;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
 }
@@ -356,7 +357,6 @@ img {
 .footer-contact-us {
   color: var(--basic-black);
   font-size: 14px;
-  font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
  }
@@ -408,6 +408,9 @@ img {
   background-color: var(--special-white);
 }
 
+.name-hotel-link {
+  color: var(--basic-black);
+}
 
 /* Icons */
 
@@ -436,6 +439,8 @@ img {
 .logo-htmlacademy:active {
   fill: var(--basic-gray);
 }
+
+
 
 .visually-hidden {
     position: absolute;
