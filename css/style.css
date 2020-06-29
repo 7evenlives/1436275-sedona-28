@@ -169,12 +169,12 @@ img {
   color: var(--special-transparent-black);
 }
 
-a:not([href]) {
+.navigation-item a:not([href]) {
   color: var(--special-activebrown);
 }
 
-a:not([href]):focus,
-a:not([href]):hover {
+.navigation-item a:not([href]):focus,
+.navigation-item a:not([href]):hover {
   color: var(--special-activebrown);
 }
 
