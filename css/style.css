@@ -59,14 +59,32 @@ img {
   height: auto;
 }
 
+
+/* Header navigation */
+
 .header-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   color: var(--basic-black);
-  }
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+}
 
 .navigation-list {
+  width: 1054px;
+  margin: 0;
+  padding: 0;
+  min-height: 70px;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
   list-style: none;
 }
 
@@ -80,7 +98,64 @@ img {
   text-align: right;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+/* Main header */
+
+.main-header {
+  margin-bottom: 70px;
+
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+
+/* Logo */
+
+.main-header-logo {
+  top: 0px;
+  position: relative;
+  z-index: 2;
+  width: 138px;
+  height: 70px;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+/* Container */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
 /* User navigation */
+
+.navigation-list {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
 
 .navigation-list a {
   color: var(--basic-black);
@@ -94,16 +169,37 @@ img {
   color: var(--special-transparent-black);
 }
 
-.navigation-item a:not([href]) {
+a:not([href]) {
   color: var(--special-activebrown);
 }
 
-.navigation-item a:not([href]):focus,
-.navigation-item a:not([href]):hover {
+a:not([href]):focus,
+a:not([href]):hover {
   color: var(--special-activebrown);
 }
 
 /* Reasons */
+
+.main-reasons {
+  width: 1200px;
+  height: 272px;
+  margin-bottom: 0px;
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+
+.main-reasons-slogan {
+  margin-top: 99px;
+  margin-bottom: 17px;
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
+}
+
+.main-reasons-paragraph {
+  outline: 5px solid rgba(17, 0, 255, 0.438);
+  outline-offset: -5px;
+}
+
+
 
 .main-reasons-slogan {
   font-size: 21px;
@@ -291,6 +387,7 @@ img {
 }
 
 
+
 /* Booking-form */
 
 .booking-item {
@@ -354,7 +451,7 @@ img {
   text-transform: uppercase;
  }
 
-.footer-contact-us {
+ .footer-contact-us {
   color: var(--basic-black);
   font-size: 14px;
   line-height: 26px;
@@ -412,6 +509,16 @@ img {
   color: var(--basic-black);
 }
 
+.name-hotel-link:hover {
+  color: var(--basic-blue);
+}
+
+.name-hotel-link:active {
+  color: var(--special-transparent-black);
+}
+
+
+
 /* Icons */
 
 .social-list-link {
@@ -439,8 +546,6 @@ img {
 .logo-htmlacademy:active {
   fill: var(--basic-gray);
 }
-
-
 
 .visually-hidden {
     position: absolute;
